@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    background-image: linear-gradient(rgba(6,9,27,0.6),rgba(6,9,27,0.6)),url(lib2.jpg);
+}
+.nav-bar{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar img{
+    width: 122px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 29px;
+    margin-right: 52px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+nav ul li::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: aquamarine;
+    display: block;
+    cursor: pointer;
+    transition: all 0.7s ease 0s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+.content{
+    color: white;
+    margin: 0px 180px;
+    padding: 135px 0;
+    box-sizing: border-box;
+}
+.content h1{
+    font-size: 63px;
+}
+.content .haha{
+    color: red;
+}
+.content p{
+    font-size: 31px;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+}
+.search-box input{
+    width: 39vw;
+    height: 37px;
+    border-radius: 22px;
+    margin: -167px 16px 0 354px;
+    padding: 0 12px;
+    font-size: 24px;
+}
+.search-box .btn{
+    width: 5vw;
+    height: 37px;
+    border-radius: 22px;
+    border-color: white;
+    margin: -167px 16px 0 -4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+.search-box .btn:hover{
+    background-color: aquamarine;
+    color: black;
+    transform: translateY(-10px);
+}
+.icon{
+    margin-left: 59em;
+    margin-top: -95px;
+}
+.icon i{
+    font-size: 24px;
+    padding-bottom: 102px;
+    color: black;
+}
+.icon i:hover{
+    color: rgb(63, 114, 97);
+}
+.fixed-box a{
+    border: 2px solid red;
+    border: transparent;
+    position: fixed;
+    margin-left: 84rem;
+    margin-top: 12rem;
+    padding: 1em;
+    font-size: 24px;
+    border-radius: 60px;
+    background-color: aquamarine;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.5s ease 0s;
+}
+.fixed-box a:hover{
+    transform: translateY(-10px);
+}
+.reading{
+    padding: 121px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.reading h1{
+    font-size: 32px;
+}
+.reading p{
+    font-size: 24px;
+    padding-top: 29px;
+}
+.books{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.books div{
+    background-color: #d3d3d3;
+    padding: 22px;
+    border-right: 10px;
+    transition: transform 0.6s ease 0s;
+}
+.books div img{
+    width: 181px;
+}
+.books div:hover{
+    transform: translateY(-15px);
+}
+.bottom{
+    position: relative;
+    margin-top: 140px;
+}
+.bottom a{
+    color: black;
+}
+.bottom i{
+    font-size: 27px;
+    padding: 0px 6px;
+    transition: transform 0.6s ease 0s;
+}
+.bottom i:hover{
+    transform: translateY(-7px);
+}
